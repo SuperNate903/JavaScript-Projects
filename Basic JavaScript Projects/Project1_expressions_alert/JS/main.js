@@ -1,5 +1,5 @@
 window.alert("Hello, World!"); // Displays an alert box saying Hello, World!
-document.write("Hello, World!"); // Writes Hello, World!
+document.write("<br>Hello, World!"); // Writes Hello, World!
 
 var A = "<br>This is a string!";
 document.write(A); // Writes the variable A
@@ -21,3 +21,7 @@ document.write(3+12); // An expression that adds 3 and 12 together
 document.write("<br>") // Indents to the next line
 var Sent1 = "This is the beginning of the string", Sent2 = " and this is the end of the string"
 document.write(Sent1+Sent2) // Concatenates Sent1 and Sent2 variables together
+
+function keyPressed() {
+    window.alert("You pressed a key in the input!");
+}
