@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Basic HTML</title>
+		<meta charset="UTF-8">
+		<meta name="author" content="Nathan">
+	</head>
+	<body>
+        <button onclick="addOperation()">2 + 2</button>
+        <p id="math-add"></p>
+
+        <button onclick="subtractOperation()">2 - 2</button>
+        <p id="math-subtract"></p>
+
+        <button onclick="multiplyOperation()">6 * 8</button>
+        <p id="math-multiply"></p>
+
+        <button onclick="divideOperation()">48 / 6</button>
+        <p id="math-divide"></p>
+
+        <button onclick="multiOperation()">(5 + 7) * (3 - 1) / 3</button>
+        <p id="math-multi"></p>
+
+        <button onclick="modulusOperation()">33 % 7</button>
+        <p id="math-modulus"></p>
+
+        <button onclick="negationOperation()">Negation of 9</button>
+        <p id="math-negation"></p>
+
+        <button onclick="incrementOperation()">Increment of 4</button>
+        <p id="math-increment"></p>
+
+        <button onclick="decrementOperation()">Decrement of 8</button>
+        <p id="math-decrement"></p>
+
+        <button onclick="randomNumber()">Random number between 1 and 100</button>
+        <p id="math-random"></p>
+
+        <button onclick="powerMethod()">4 to the power of 3</button>
+        <p id="math-power"></p>
+
+        <p>Write an equation</p>
+        <input type="text" id="operation" value="2 + 2">
+        <button onclick="mathOperation()">Calculate</button>
+        <p id="custom-math"></p>
+
+        <script src="./JS/main.js"></script>
+	</body>
+</html>
