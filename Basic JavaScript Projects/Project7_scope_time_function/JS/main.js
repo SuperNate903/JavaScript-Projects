@@ -4,7 +4,6 @@ function varFunction() {
     console.log(global+local)
 }
 function repeatFunction() {
-    var local = 7 // The fix for the error
     console.log(global+local)
 }
 varFunction()
@@ -82,15 +81,15 @@ function operatorFunction(symbol) {
 }
 
 function Time_function() {
-    var Time = new Date().getHours();
+    var Time = new Date().getHours(); // Gets the hours
     var Reply;
-    if(Time < 12 == Time > 0) {
+    if(Time < 12 == Time > 0) { // Checks if the time is between 0 and 12
         Reply = "It is morning time!";
     }
-    else if(Time >= 12 == Time < 18) {
+    else if(Time >= 12 == Time < 18) { // Or if the time is 12 or between 12 and 18
         Reply = "It is afternoon.";
     }
-    else {
+    else { // Otherwise
         Reply = "It is evening time.";
     }
     document.getElementById("Time_of_day").innerHTML = Reply;
