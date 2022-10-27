@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Basic HTML</title>
+		<meta charset="UTF-8">
+		<meta name="author" content="Nathan">
+	</head>
+	<body>
+        <p id="Time" onclick="getHoursInTime()">Click Me</p>
+
+        <p>I am thinking of a number between 1 and 100</p>
+        <input type="text" id="Guess">
+        <button onclick="Prediction()">Guess</button>
+        <p id="Response"></p>
+
+        <p>Input 2 Values</p>
+        <input type="text" value="2" id="Value1">
+        <input type="text" value="2" id="Value2">
+        <button onclick="operatorFunction('equal')">==</button>
+        <button onclick="operatorFunction('greater')">></button>
+        <button onclick="operatorFunction('less')"><</button>
+        <button onclick="operatorFunction('greaterorequal')">>=</button>
+        <button onclick="operatorFunction('lessorequal')"><=</button>
+        <p id="output"></p>
+
+        <p id="Time_of_day"></p>
+        <button onclick="Time_function()">Click here to get the time</button>
+
+        <script src="./JS/main.js"></script>
+	</body>
+</html>
