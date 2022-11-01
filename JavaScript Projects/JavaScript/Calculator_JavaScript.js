@@ -30,7 +30,7 @@ function Input_Digit(digit) {
 function Input_Decimal(dot) {
     //This ensures that accidental clicking of the decimal point doesn't
     //cause bugs in the operation.
-    if(Calculator.Wait_Second_Operand === true) { return; }
+    if(Calculator.Wait_Second_Operand === true) return;
     if(!Calculator.Display_Value.includes(dot)) {
         //We are saying that if the Display_Value does not contain a decimal point
         //we want to add a decimal point.
@@ -122,6 +122,6 @@ keys.addEventListener("click", (event) => {
         Update_Display();
         return;
     }
-    Input_Decimal(target.value);
+    Input_Digit(target.value);
     Update_Display();
 })
