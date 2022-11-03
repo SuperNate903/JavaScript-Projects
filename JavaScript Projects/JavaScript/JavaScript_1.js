@@ -43,3 +43,9 @@ grd.addColorStop(5/6,"purple");
 grd.addColorStop(1,"red");
 ctx.fillStyle = grd;
 ctx.fillRect(0,0,200,200);
+
+document.body.classList.add("fade-out");
+
+window.addEventListener("DOMContentLoaded", () => {
+    document.body.classList.remove("fade-out");
+});

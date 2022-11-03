@@ -4,6 +4,18 @@
 		<title>Basic HTML</title>
 		<meta charset="UTF-8">
 	        <meta name="author" content="Nathan">
+
+                <style>
+                        body {
+                                opacity: 1;
+                                transition: 1s opacity;
+                        }
+
+                        body.fade-out {
+                                opacity: 0;
+                                transition: none;
+                        }
+                </style>
 	</head>
 	<body>
         <h2>Pizza Toppings</h2>
@@ -17,7 +29,7 @@
         <button onclick="switchFunction()">Select</button>
         <p id="switch-output"></p>
 
-        <h3 class="modify">Heading</h3>
+        <h3 class="modify" style="font-size: 2vw;">Heading</h3>
         <p class="modify">Paragraph</p>
         <button onclick="modifyClass()">Click me</button>
 
